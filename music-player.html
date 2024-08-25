@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-based Music Player</title>
+    <link rel="stylesheet" href="music-player.css">
+</head>
+<body>
+    <div class="music-player-container">
+        <!-- Music Player Display -->
+        <div class="music-player">
+            <div class="album-art">
+                <img src="https://is2-ssl.mzstatic.com/image/thumb/Music116/v4/33/87/c8/3387c827-adaa-681d-bd10-ce7d8e888b9c/22UMGIM21054.rgb.jpg/1200x1200bf-60.jpg" alt="Album Cover">
+            </div>
+            <div class="song-info">
+                <h2 class="song-title">Bones</h2>
+                <p class="artist-name">Image dragons</p>
+            </div>
+            <div class="controls">
+                <button id="prevBtn">⏮</button>
+                <button id="playPauseBtn">▶️</button>
+                <button id="nextBtn">⏭</button>
+                <input type="range" id="progressBar" value="0" min="0" max="100">
+                <span id="currentTime">0:00</span> / <span id="totalTime">2:45</span>
+            </div>
+            <div class="volume-controls">
+                <label for="volumeSlider">Volume:</label>
+                <input type="range" id="volumeSlider" min="0" max="100" value="70">
+            </div>
+        </div>
+    </div>
+
+    <script src="music-player.js"></script>
+</body>
+</html>
